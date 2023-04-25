@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import css from './user.module.css';
+import css from './User.module.css';
 export const User = ({
   username,
   tag,
