@@ -11,7 +11,7 @@ import transactions from 'data/transactions';
 export const App = () => {
   return (
     <>
-      <Section>
+      <Section title="Task 1">
         <User
           avatar={user.avatar}
           username={user.username}
@@ -20,13 +20,13 @@ export const App = () => {
           stats={user.stats}
         />
       </Section>
-      <Section>
+      <Section title="Task 2">
         <Statistics title="Upload Stats" stats={data} />
       </Section>
-      <Section>
+      <Section title="Task 3">
         <FriendList friends={friends} />
       </Section>
-      <Section>
+      <Section title="Task 4">
         <Transactions items={transactions} />
       </Section>
     </>

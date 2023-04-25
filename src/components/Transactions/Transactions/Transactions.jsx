@@ -1,4 +1,6 @@
+import propTypes from 'prop-types';
 import { Table } from '../Table/Table';
+
 export const Transactions = ({ items }) => {
   return (
     <Table>
@@ -11,4 +13,14 @@ export const Transactions = ({ items }) => {
       ))}
     </Table>
   );
+};
+Transactions.propTypes = {
+  items: propTypes.arrayOf(
+    propTypes.shape({
+      id: propTypes.string,
+      type: propTypes.string,
+      amount: propTypes.string,
+      currency: propTypes.string,
+    })
+  ),
 };

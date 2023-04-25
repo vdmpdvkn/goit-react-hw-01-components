@@ -1,0 +1,44 @@
+.profile {
+  width: 280px;
+  margin: 0 auto;
+  border: 1px solid grey;
+  padding: 5px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}
+.username {
+  color: grey;
+  font-size: 20px;
+}
+.tag {
+  color: grey;
+  font-size: 15px;
+}
+.location {
+  composes: username;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80px;
+  align-items: center;
+  border: 1px solid darkgrey;
+  background-color: grey;
+}
