@@ -1,7 +1,8 @@
-import css from './Section.module.css';
 export const Section = ({ title, children }) => (
-  <section className={css.section}>
-    {title && <h2 className={css.sectionTitle}>{title}</h2>}
+  <section style={{ paddingTop: '40px', paddingBottom: '40px' }}>
+    {title && (
+      <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>{title}</h2>
+    )}
     {children}
   </section>
 );
