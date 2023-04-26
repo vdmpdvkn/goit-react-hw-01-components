@@ -8,7 +8,7 @@
   transition: box-shadow 250ms ease-in-out;
 }
 .item:hover {
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 .name {
   font-size: 20px;
